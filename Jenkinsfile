@@ -7,7 +7,7 @@ pipeline {
       steps {
           echo "hello==================>"
           echo '$env.MAVEN_HOME'
-          echo '$foo'
+          bat echo '$foo'
       }
     }
 
