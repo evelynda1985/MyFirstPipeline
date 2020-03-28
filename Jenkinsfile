@@ -9,7 +9,7 @@ pipeline {
     }
       steps {
           echo "hello==================>"
-          bat 'echo $FOO'
+          bat 'echo %FOO%'
       }
     }
 
