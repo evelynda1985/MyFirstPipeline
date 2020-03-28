@@ -3,10 +3,8 @@ pipeline {
   stages {
     stage('clean') {
       steps {
-          echo "PATH=========>${MAVEN_HOME}"
-          echo "PATH=========>$MAVEN_HOME"
-          echo 'PATH=========>$MAVEN_HOME'
-          echo 'PATH=========>${MAVEN_HOME}'
+          echo "hello==================>"
+          echo 'hello==================>''
       }
     }
 
