@@ -1,4 +1,4 @@
-def foo =''C:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/'
+def foo ='C:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/'
 
 pipeline {
   agent any
