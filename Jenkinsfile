@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('clean') {
     environment{
-    FOO ='C:\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\'
+    FOO ='C:/apache-maven-3.6.3-bin/apache-maven-3.6.3'
     }
       steps {
           echo "hello==================>"
