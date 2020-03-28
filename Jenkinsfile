@@ -10,7 +10,7 @@ pipeline {
     }
       steps {
           echo "hello==================>"
-          bat '%MAVEN_BIN%/mvn clean'
+          bat '%MAVEN_HOME%/bin/mvn clean'
       }
     }
 
