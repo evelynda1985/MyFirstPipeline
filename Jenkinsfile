@@ -1,13 +1,15 @@
-def foo ='C:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/'
+
 
 pipeline {
   agent any
   stages {
     stage('clean') {
+    environment{
+    FOO ='C:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/'
+    }
       steps {
           echo "hello==================>"
-          echo '$env.MAVEN_HOME'
-          bat 'echo ${foo}'
+          bat 'echo ${FOO}'
       }
     }
 
