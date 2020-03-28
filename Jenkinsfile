@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('clean') {
       steps {
-          bat "$MAVEN_BIN/mvn clean"
+          bat '$MAVEN_BIN/mvn clean'
       }
     }
 
