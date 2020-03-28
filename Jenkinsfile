@@ -13,10 +13,10 @@ pipeline {
       }
     }
 
-     stage('build') {
+     stage('compile') {
         steps {
            echo "hello==================>"
-           bat '%MAVEN_BIN%/mvn build'
+           bat '%MAVEN_HOME%/mvn compile'
           }
         }
   }
