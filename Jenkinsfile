@@ -6,8 +6,8 @@ pipeline {
     stage('clean') {
       steps {
           echo "hello==================>"
-          echo '${env.MAVEN_HOME}'
-          echo '${foo}'
+          echo '$env.MAVEN_HOME'
+          echo '$foo'
       }
     }
 
