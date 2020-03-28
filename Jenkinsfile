@@ -3,19 +3,19 @@ pipeline {
   stages {
     stage('clean') {
       steps {
-          bat 'mvn clean'
+          bat 'C:\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\mvn clean'
       }
     }
 
     stage('compile') {
       steps {
-          bat 'mvn compile'
+          bat 'C:\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\mvn compile'
       }
     }
 
     stage('test') {
       steps {
-          bat 'mvn test'
+          bat 'C:\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\mvn test'
       }
     }
 
