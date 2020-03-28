@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('clean') {
       steps {
-          bat '${MAVEN_BIN}/mvn clean'
+          bat ${MAVEN_BIN}'/mvn clean'
       }
     }
 
@@ -11,6 +11,6 @@ pipeline {
 }
 
 environment{
-    MAVEN_HOME = '/apache-maven-3.6.3-bin/apache-maven-3.6.3'
+    MAVEN_HOME = 'C:/apache-maven-3.6.3-bin/apache-maven-3.6.3'
     MAVEN_BIN = '$MAVEN_HOME/bin'
 }
