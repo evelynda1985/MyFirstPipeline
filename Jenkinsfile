@@ -4,7 +4,7 @@ pipeline {
     stage('clean') {
       steps {
           echo "hello==================>"
-          echo '${MAVEN_HOME}'
+          echo '${env.MAVEN_HOME}'
       }
     }
 
