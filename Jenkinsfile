@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage('clean') {
       steps {
-          bat ${MAVEN_BIN}'/mvn clean'
+          echo "${MAVEN_HOME}"
+          echo "$MAVEN_HOME"
+          echo '$MAVEN_HOME'
+          echo '${MAVEN_HOME}'
+          bat '${MAVEN_BIN}/mvn clean'
       }
     }
 
