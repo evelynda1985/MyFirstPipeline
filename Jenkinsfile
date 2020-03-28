@@ -1,3 +1,5 @@
+def foo =''C:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin/'
+
 pipeline {
   agent any
   stages {
@@ -5,6 +7,7 @@ pipeline {
       steps {
           echo "hello==================>"
           echo '${env.MAVEN_HOME}'
+          echo '${foo}'
       }
     }
 
