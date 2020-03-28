@@ -6,7 +6,7 @@ pipeline {
     stage('clean') {
     environment{
     MAVEN_HOME = 'C:/apache-maven-3.6.3-bin/apache-maven-3.6.3'
-    MAVEN_BIN = '$MAVEN_HOME/bin'
+    MAVEN_BIN = '%MAVEN_HOME%/bin'
     }
       steps {
           echo "hello==================>"
