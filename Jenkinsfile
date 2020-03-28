@@ -16,7 +16,7 @@ pipeline {
      stage('compile') {
         steps {
            echo "hello==================>"
-           bat '%MAVEN_HOME%/mvn compile'
+           bat '%MAVEN_BIN%/mvn compile'
           }
         }
   }
