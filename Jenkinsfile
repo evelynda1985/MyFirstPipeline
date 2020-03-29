@@ -13,7 +13,7 @@ pipeline {
      stage('compile') {
         steps {
            echo "hello==================>"
-           bat '%MAVEN_BIN%/mvn -f C:/Users/evsanche/projects/MyFirstPipeline/pom.xml/mvn compile'
+           bat '%MAVEN_BIN%/mvn -a C:/Users/evsanche/projects/MyFirstPipeline/pom.xml/mvn compile'
           }
         }
 
