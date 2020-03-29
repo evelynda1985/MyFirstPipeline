@@ -1,10 +1,8 @@
-
-
 pipeline {
   agent any
   environment{
-      MAVEN_HOME = 'C:/apache-maven-3.6.3-bin/apache-maven-3.6.3'
-      MAVEN_BIN = 'C:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin'
+      MAVEN_HOME='C:/apache-maven-3.6.3-bin/apache-maven-3.6.3'
+      MAVEN_BIN='C:/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin'
       }
   stages {
     stage('clean') {
@@ -16,7 +14,7 @@ pipeline {
      stage('compile') {
         steps {
            echo "hello==================>"
-           bat '%MAVEN_BIN%/mvn compile'
+           bat 'mvn -f C:\Users\evsanche\projects\MyFirstPipeline\pom.xml mvn compile'
           }
         }
   }
