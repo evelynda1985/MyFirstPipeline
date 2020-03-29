@@ -7,16 +7,11 @@ pipeline {
   stages {
     stage('clean') {
       steps {
-          bat '%MAVEN_BIN%/mvn clean'
+          bat '%MAVEN_BIN%/mvn compile'
       }
     }
 
-     stage('compile') {
-        steps {
-           echo "hello==================>"
-           bat '%MAVEN_BIN%/mvn -f C:/Users/evsanche/projects/MyFirstPipeline/pom.xml mvn compile'
-          }
-        }
+
   }
 }
 
