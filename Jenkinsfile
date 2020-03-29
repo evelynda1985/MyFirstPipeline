@@ -14,7 +14,7 @@ pipeline {
      stage('compile') {
         steps {
            echo "hello==================>"
-           bat 'mvn -f C:\Users\evsanche\projects\MyFirstPipeline\pom.xml mvn compile'
+           bat 'mvn -f C:/Users/evsanche/projects/MyFirstPipeline/pom.xml mvn compile'
           }
         }
   }
